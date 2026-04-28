@@ -39,7 +39,6 @@ package body RP.PIO.WS2812 is
    begin
       This.Pin.Configure (RP.GPIO.Output, RP.GPIO.Pull_Up, GPIO_Function (This.PIO));
 
-      Enable (This.PIO);
       Load
          (This   => This.PIO,
           Prog   => WS2812_PIO.Ws2812_Program_Instructions,
